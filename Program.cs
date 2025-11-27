@@ -20,4 +20,10 @@
         StepsToday = 0;
     }
 
+    public int GetProgress()
+    {
+        if (DailyGoal == 0) return 100;
+        return (int)((double)StepsToday / DailyGoal * 100);
+    }
+
 }
