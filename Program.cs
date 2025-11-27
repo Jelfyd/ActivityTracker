@@ -15,4 +15,9 @@
             StepsToday += steps;
     }
 
+    public void ResetDay()
+    {
+        StepsToday = 0;
+    }
+
 }
