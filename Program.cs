@@ -3,6 +3,8 @@
     public int DailyGoal { get; }
     public int StepsToday { get; private set; }
 
+    public bool IsGoalReached => StepsToday >= DailyGoal;
+
     public ActivityTracker(int dailyGoal)
     {
         DailyGoal = dailyGoal;
