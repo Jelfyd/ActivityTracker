@@ -7,6 +7,9 @@
 
     public ActivityTracker(int dailyGoal)
     {
+        if (dailyGoal < 0)
+            throw new ArgumentException("Daily goal cannot be negative");
+        
         DailyGoal = dailyGoal;
         StepsToday = 0;
     }
